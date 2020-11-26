@@ -89,7 +89,7 @@ function foods(foods) {
 }
 function designTemplate(design) {
   return `
-    <div class="mt-5 col-sm-6 col-md-3 col-lg-4">
+    <div class="mt-5 col-sm-1 col-md-3 col-lg-4">
      <div class="card" style="18rm">
       <div class="card-body">
         <h5 class="card-title">${design.name}</h5>
