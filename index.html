@@ -98,11 +98,24 @@
 
             <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
               <label for="distance VS classroom" class="btn btn-outline-info ml-1 mb-1">
-                <input type="radio" name="distance VS classroom" id="class" value="In the Classroom" /> In the Classroom
+                <input
+                  type="radio"
+                  name="distance VS classroom"
+                  id="class"
+                  value="In the Classroom"
+                  autocomplete="off"
+                />
+                In the Classroom
               </label>
               <label for="distance VS classroom" class="btn btn-outline-info ml-1 mb-1">
-                <input type="radio" name="distance VS classroom" id="distance" value="Distance Learning" /> Distance
-                Learning
+                <input
+                  type="radio"
+                  name="distance VS classroom"
+                  id="distance"
+                  value="Distance Learning"
+                  autocomplete="off"
+                />
+                Distance Learning
               </label>
             </div>
           </div>
@@ -408,20 +421,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
     <script src="tagsinput.js"></script>
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36251023-1']);
-      _gaq.push(['_setDomainName', 'jqueryscript.net']);
-      _gaq.push(['_trackPageview']);
-
-      (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src =
-          ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+      document.addEventListener('DOMContentLoaded', () => {
+        localStorage.clear();
+      });
     </script>
   </body>
 </html>
