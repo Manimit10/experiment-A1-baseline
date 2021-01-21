@@ -4,7 +4,7 @@ const designData = [
     description:
       'In this activity, you will have to propose an idea for our design project: Build a robot that helps children learn mathematics. At the initial level you will have to propose the idea and during the discussions you will need to point advantages and disadvantages of the proposed ideas. In the final level you will have to conclude in one idea.',
     Author: 'Konmich',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/12988/',
+    link: 'preview.html',
     Time: '120 minutes',
   },
   {
