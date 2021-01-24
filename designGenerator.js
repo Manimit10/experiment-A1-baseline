@@ -1,79 +1,49 @@
 const designData = [
   {
-    name: 'Collaborative idea generation',
+    name: 'History of world war II',
     description:
-      'In this activity, you will have to propose an idea for our design project: Build a robot that helps children learn mathematics. At the initial level you will have to propose the idea and during the discussions you will need to point advantages and disadvantages of the proposed ideas. In the final level you will have to conclude in one idea.',
-    Author: 'Konmich',
-    link: 'preview.html',
-    Time: '120 minutes',
+      'Decide which is the best summary of the history of world war II among those provided in class and give your reasons.',
+    Author: '',
+    link: './previews/preview1.html',
+    Time: '',
   },
   {
-    name: 'Metodología Docente',
-    description:
-      '¿Qué ventajas e inconvenientes destacarías del uso de múltiples estrategias metodológicas de E-A para atender la diversidad del estudiantado?',
+    name: 'Historical eras',
+    description: 'Assess the quality of the five main historical eras presented in the history timeline.',
     Author: 'Verónica',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
+    link: './Previews/preview2.html',
     Time: '120 minutes',
   },
   {
-    name: 'ITIC Class Activity',
+    name: 'Art painting styles',
     description:
-      '¿Qué consejo/s sobre privacidad de datos y riesgos relacionados con la compartición de datos le darías a un/a amigo/a? (En dos frases máximo).',
-    Author: 'IshA',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
-    Time: '120 minutes',
+      'Define, from the theoretical perspective, what are the main concepts of Expressionism and Surrealism.',
+    Author: '',
+    link: './Previews/preview3.html',
+    Time: '',
   },
   {
-    name: 'ITIC Class Activity',
+    name: "Shakespeare's Monologue",
     description:
-      '¿Qué consejo/s sobre privacidad de datos y riesgos relacionados con la compartición de datos le darías a un/a amigo/a? (En dos frases máximo).',
-    Author: 'IshA',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
+      'Evaluate if the monologue watched in class could be considered a  Shakespearian monologue based on the authors’ style and historical characteristics.',
+    Author: '',
+    link: './Previews/preview4.html',
     Time: '120 minutes',
-    blooms: 'understand',
   },
   {
-    name: '¿Qué curso preparías utilizando estas herramientas?',
-    description: 'Elegir un tema para desarrollar con estas herramientas',
+    name: 'Network evaluation',
+    description: 'Judge WAN and LAN based on the security issues.',
     Author: 'Karina Chappell Alaniz',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
+    link: './Previews/preview5.html',
     Time: '120 minutes',
   },
   {
-    name: 'Aspecto del seminario que más te ha interesado',
-    description: 'Indica el aspecto del seminario que más te ha interesado',
-    Author: 'Davinia',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
-    Time: '120 minutes',
-  },
-  {
-    name: 'Metodología Docente',
+    name: 'Types of instruments',
     description:
-      '¿Qué ventajas e inconvenientes destacarías del uso de múltiples estrategias metodológicas de E-A para atender la diversidad del estudiantado?',
-    Author: 'Verónica',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
+      'Find errors within classification of instruments provided in class according to the following types: percussion, stringed, keyboard, wind, and electronic.',
+    Author: '',
+    link: './Previews/preview6.html',
     Time: '120 minutes',
-  },
-  {
-    name: 'Asking questions to peers',
-    description: 'Ask a question to the peers that have presented',
-    Author: 'Davinia',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
-    Time: '86400 minutes',
-  },
-  {
-    name: 'Questions about Science communication',
-    description: 'Propose a question for the groups having studied "Science communication',
-    Author: 'Davinia',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
-    Time: '60 minutes',
-  },
-  {
-    name: 'Questions about Science communication',
-    description: 'Propose a question for the groups having studied "Science communication',
-    Author: 'Davinia',
-    link: 'https://ilde.upf.edu/pg/lds/vieweditor/14229/',
-    Time: '60 minutes',
   },
 ];
 
@@ -103,7 +73,7 @@ function designTemplate(design) {
       <div class="card-body">
         <h5 class="card-title">${design.name}</h5>
          <p class="card-text">${design.description} </p>
-              <a href="${design.link}" target="_blank" class="btn btn-primary btn-sm"
+              <a href="${design.link}" class="btn btn-primary btn-sm"
                 >Preview</a
               >
               <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#confirmModal">
