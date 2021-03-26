@@ -1,25 +1,14 @@
-// const check = document.getElementById('form');
-// if (check) {
-//   check.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     console.log('hi');
-//     //   e.preventDefault();
-//     //   const options = document.querySelectorAll('input[name="options]:checked"');
-//     //   console.log(options);
-//   });
-// }
 const resultList = document.getElementById('result');
 
+// store user's entry in local storage
 new URLSearchParams(window.location.search).forEach((value, name) => {
-  resultList.innerHTML += `<b>${name}:</b> ${value}<br>`;
+  localStorage.setItem(name, value);
 });
-
-// const resul = document.getElementById('result2');
-// let myResult = new URLSearchParams(window.location.search);
-// myResult.forEach((value, key) => {
-//   console.log(key, value);
-//   resul.innerHTML += `<b>${key}:</b> ${value}<br>`;
-// });
+// retrieve from local storage and show it append to html
+for (let [key, value] of Object.entries(localStorage)) {
+  console.log(`${key}: ${value}`);
+  resultList.innerHTML += `<b>${key}:</b> ${value}</br> `;
+}
 
 $(document).ready(function () {
   $('.btn-group').on('click', 'label.btn', function (e) {
